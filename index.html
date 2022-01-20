@@ -17,7 +17,7 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item"><a class="navigation-link"><span class="visually-hidden">Поиск</span></a></li>
           <li class="navigation-item"><a class="navigation-link"><span class="visually-hidden">Корзина</span></a></li>
-          <li class="navigation-item"><a class="navigation-link">Вход</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="login.html">Вход</a></li>
         </ul>
       </nav>
     </header>
@@ -95,13 +95,79 @@
         <h2 class="appointment-title">Записаться</h2>
         <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
         <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="text">
+          <p class="appointment-item">
+            <label for="appointment-date">Дата</label>
+            <input id="appointment-date" type="text" name="date" value="" placeholder="01.01.2020">
+          </p>
+          <p class="appointment-item">
+            <label for="appointment-time">Время</label>
+            <input id="appointment-time" type="text" name="time" value="" placeholder="10:10">
+          </p>
+          <p class="appointment-item">
+            <label for="appointment-phone">Телефон</label>
+             <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 800 555-86-28">
+          </p>
+          <p class="appointment-item">
+            <label for="appointment-name">Ваше имя</label>
+          <input id="appointment-name" type="text" name="name" value="">
+          </p>
           <button class="button" type="submit">Записаться</button>
         </form>
       </section>
-
     </main>
 
+    <footer class="main-footer">
+      <p class="footer-contacts">
+        <img class="footer-logo" src="" alt="Барбершоп Бородинский">
+        Санкт-Петербург, набережная<br>
+        реки Карповки, 5, литера П.<br>
+        <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+        <a class="footer-map" href="map.html">Как нас найти?</a>
+      </p>
+      <p class="footer-email">
+        Получайте лучшие предложения
+        <form class="email-request" action="get">
+          <input type="text">
+          <button class="email-send" type="submit">Отправить</button>
+        </form>
+      </p>
+      <p class="footer-social">
+        <ul class="social-list">
+          <li class="social-item"><a class="social-button" href="#">Twitter</a></li>
+          <li class="social-item"><a class="social-button" href="#">Vkontakte</a></li>
+          <li class="social-item"><a class="social-button" href="#">Instagram</a></li>
+        </ul>
+        <p class="footer-copyright">
+        <b>Сделано в</b> <a class=footer-copyright href="#">.html academy</a>
+        </p>
+      </p>
+    </footer>
+
+    <section class="modal modal-login">
+      <h2>Личный кабинет</h2>
+      <p>Введите свой логин и пароль</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
+        <p>
+          <label class="visually-hidden" for="user-login" >Логин</label>
+          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p class="login-password-info">
+          <label>
+            <input class="visually-hidden" id="login-password-info" type="checkbox" name="remember">
+            <span class="checkbox-indicator"></span>
+            Запомнить меня
+          </label>
+          <a class="restore" href="#">Забыл пароль</a>
+        </p>
+        <button class="button" type="submit">войти</button>
+      </form>
+      <a class="registration" href="#">Регистрация</a>
+      <button class="modal-close">Закрыть</button>
+    </section>
     
   </body>
 </html>
