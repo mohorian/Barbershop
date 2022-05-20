@@ -2,29 +2,36 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Барбершоп «Бородинский»</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
 
-    <header>
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item"><a class="navigation-link" href="#"><span class="hidden">Барбершоп Бородинский</span><img src="" alt="Логотип"></a></li>
-          <li class="navigation-item"><a class="navigation-link" href="about">О нас</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="catalog.html">Каталог</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="faq.html">Частые вопросы</a></li>
-        </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item"><a class="navigation-link"><span class="visually-hidden">Поиск</span></a></li>
-          <li class="navigation-item"><a class="navigation-link"><span class="visually-hidden">Корзина</span></a></li>
-          <li class="navigation-item"><a class="navigation-link" href="login.html">Вход</a></li>
-        </ul>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="#"><img src="img/main-logo.svg" width="367" height="152" alt="Логотип барбершопа"></a>
+        <div class="main-navigation-wrapper">
+          <div class="container">
+            <ul class="navigation-list site-navigation">
+              <li class="navigation-item"><a class="navigation-link" href="about">О нас</a></li>
+              <li class="navigation-item"><a class="navigation-link" href="catalog.html">Каталог</a></li>
+              <li class="navigation-item"><a class="navigation-link" href="faq.html">Частые вопросы</a></li>
+            </ul>
+            <ul class="navigation-list user-navigation">
+              <li class="navigation-item"><a class="navigation-link"><span class="visually-hidden">Поиск</span></a></li>
+              <li class="navigation-item"><a class="navigation-link"><span class="visually-hidden">Корзина</span></a></li>
+              <li class="navigation-item"><a class="navigation-link login-link" href="login.html">Вход</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
-    <main class="main-index">
+    <main class="main-index container">
       <h1 class="visually-hidden">Барбершоп 'Бородинский'</h1>
-      <img class="logo" src="" alt="Логотип Барбершопа 'Бородинский'">
+
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
@@ -43,43 +50,49 @@
         </ul>
 
       </section>
-      <section class="services">
-        <h2 class="services-title">Популярные услуги</h2>
-        <ul class="services-list">
-          <li class="services-item"><span class="services-name">Стрижка машинкой</span><span class="services-price">800  ₽</span></li>
-          <li class="services-item"><span class="services-name">Стрижка машинкой</span><span class="services-price">800  ₽</span></li>
-          <li class="services-item"><span class="services-name">Стрижка машинкой</span><span class="services-price">800  ₽</span></li>
-          <li class="services-item"><span class="services-name">Стрижка машинкой</span><span class="services-price">800  ₽</span></li>
-        </ul>
-        <a class="button button-all" href="#">Посмотреть все</a>
-      </section>
 
-      <section class="gallery">
-        <h2 class="gallery-title">Фотогалерея</h2>
-        <img class="slider-image" src="" alt="Примеры работ">
-        <button class="slider-button slider-previous" type="button"><span class="visually-hidden">Предыдущее фото</span></button>
-        <button class="slider-button slider-next"type="button"><span class="visually-hidden">Следующее фото</span></button>
-        <ol class="slider-pagination">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button"><span class="visually-hidden">Первое фото</span></button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button"><span class="visually-hidden">Второе фото</span></button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button"><span class="visually-hidden">Третье фото</span></button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button"><span class="visually-hidden">Четвертое фото</span></button>
-          </li>
-        </ol>
-      </section>
+      <div class="index-columns">
+        <section class="services">
+          <h2 class="services-title">Популярные услуги</h2>
+          <ul class="services-list">
+            <li class="services-item"><span class="services-name">Стрижка машинкой</span><span class="pointing"></span><span class="services-price">800  ₽</span></li>
+            <li class="services-item"><span class="services-name">Стрижка усов</span><span class="pointing"></span><span class="services-price">1200  ₽</span></li>
+            <li class="services-item"><span class="services-name">Груминг</span><span class="pointing"></span><span class="services-price">400  ₽</span></li>
+            <li class="services-item"><span class="services-name">Комплексная стрижка</span><span class="pointing"></span><span class="services-price">2300  ₽</span></li>
+          </ul>
+          <a class="button button-all" href="#">Посмотреть все</a>
+        </section>
 
+        <section class="gallery">
+          <h2 class="gallery-title">Фотогалерея</h2>
+          <div class="gallery-container">
+            <img class="slider-image" src="img/slider-image.jpg" alt="Примеры работ">
+            <button class="slider-button slider-previous button" type="button"><span class="visually-hidden">Предыдущее фото</span></button>
+            <button class="slider-button slider-next button"type="button"><span class="visually-hidden">Следующее фото</span></button>
+          </div>
+          <ol class="slider-pagination">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button"><span class="visually-hidden">Первое фото</span></button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button"><span class="visually-hidden">Второе фото</span></button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button"><span class="visually-hidden">Третье фото</span></button>
+            </li>
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button"><span class="visually-hidden">Четвертое фото</span></button>
+            </li>
+          </ol>
+        </section>
+      </div>
+
+      <div class="index-columns">
       <section class="contacts">
         <h2 class="contacts-title">Контакты</h2>
         <h3 class="contacts-subtitle">Барбершоп «Бородинский»</h3>
         <address class="contacts-address">
-          <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5,<br> литера П.</p>
           <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
         </address>
         <h3 class="contacts-subtitle">Время работы</h3>
@@ -93,14 +106,14 @@
 
       <section class="appointment">
         <h2 class="appointment-title">Записаться</h2>
-        <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
+        <p class="appointment-remark">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
         <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="appointment-item">
-            <label for="appointment-date">Дата</label>
+            <label for="appointment-date"><span class="appointment-icon">Дата</span></label>
             <input id="appointment-date" type="text" name="date" value="" placeholder="01.01.2020">
           </p>
           <p class="appointment-item">
-            <label for="appointment-time">Время</label>
+            <label for="appointment-time"><span class="appointment-icon">Время</span></label>
             <input id="appointment-time" type="text" name="time" value="" placeholder="10:10">
           </p>
           <p class="appointment-item">
@@ -114,59 +127,64 @@
           <button class="button" type="submit">Записаться</button>
         </form>
       </section>
+      </div>
     </main>
 
     <footer class="main-footer">
-      <p class="footer-contacts">
-        <img class="footer-logo" src="" alt="Барбершоп Бородинский">
-        Санкт-Петербург, набережная<br>
-        реки Карповки, 5, литера П.<br>
-        <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-        <a class="footer-map" href="map.html">Как нас найти?</a>
-      </p>
-      <p class="footer-email">
-        Получайте лучшие предложения
-        <form class="email-request" action="get">
-          <input type="text">
-          <button class="email-send" type="submit">Отправить</button>
-        </form>
-      </p>
-      <p class="footer-social">
-        <ul class="social-list">
-          <li class="social-item"><a class="social-button" href="#">Twitter</a></li>
-          <li class="social-item"><a class="social-button" href="#">Vkontakte</a></li>
-          <li class="social-item"><a class="social-button" href="#">Instagram</a></li>
-        </ul>
-        <p class="footer-copyright">
-        <b>Сделано в</b> <a class=footer-copyright href="#">.html academy</a>
-        </p>
-      </p>
+      <div class="container">
+        <div class="footer-contacts">
+          <img class="footer-logo" src="img/logo-short-dark.svg" alt="Барбершоп Бородинский">
+          <p class="footer-address">
+            Санкт-Петербург, набережная<br>
+            реки Карповки, 5, литера П.<br>
+          </p>
+          <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+          <a class="footer-map" href="map.html">Как нас найти?</a>
+        </div>
+        <div class="footer-email">
+          <b>Получайте лучшие предложения</b>
+          <form class="email-request" action="get">
+            <input type="text" placeholder="question@htmlacademy.ru">
+            <button class="button email-send" type="submit"><span class="visually-hidden">Отправить</span></button>
+          </form>
+        </div>
+        <div class="footer-social">
+          <b>Давайте дружить</b>
+          <ul class="social-list">
+              <li class="social-item"><a class="social-button twitter-button" href="#"><span class="visually-hidden">Twitter</span></a></li>
+              <li class="social-item"><a class="social-button vkontakte-button" href="#"><span class="visually-hidden">Vkontakte</span></a></li>
+              <li class="social-item"><a class="social-button instagram-button" href="#"><span class="visually-hidden">Instagram</span></a></li>
+          </ul>
+          <p class="footer-copyright">
+            Сделано в <a class=copyright-link href="#">.html academy</a>
+          </p>
+        </div>
+      </div>
     </footer>
 
-    <section class="modal modal-login">
+    <section class="modal-login">
       <h2>Личный кабинет</h2>
-      <p>Введите свой логин и пароль</p>
       <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
         <p>
           <label class="visually-hidden" for="user-login" >Логин</label>
-          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+          <input class="login-user" id="user-login" type="text" name="login" placeholder="Логин">
         </p>
         <p>
           <label class="visually-hidden" for="user-password">Пароль</label>
-          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+          <input class="login-password" id="user-password" type="password" name="password" placeholder="Пароль">
         </p>
         <p class="login-password-info">
-          <label>
+          <label class="login-checkbox">
             <input class="visually-hidden" id="login-password-info" type="checkbox" name="remember">
             <span class="checkbox-indicator"></span>
-            Запомнить меня
+            <span class="checkbox-remember">Запомнить меня</span>
           </label>
           <a class="restore" href="#">Забыл пароль</a>
         </p>
         <button class="button" type="submit">войти</button>
       </form>
       <a class="registration" href="#">Регистрация</a>
-      <button class="modal-close">Закрыть</button>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
     
   </body>
