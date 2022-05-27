@@ -20,9 +20,24 @@
               <li class="navigation-item"><a class="navigation-link" href="faq.html">Частые вопросы</a></li>
             </ul>
             <ul class="navigation-list user-navigation">
-              <li class="navigation-item"><a class="navigation-link"><span class="visually-hidden">Поиск</span></a></li>
-              <li class="navigation-item"><a class="navigation-link"><span class="visually-hidden">Корзина</span></a></li>
-              <li class="navigation-item"><a class="navigation-link login-link" href="login.html">Вход</a></li>
+              <li class="navigation-item">
+                <a class="navigation-link navigation-link-search" href="#" aria-label="Поиск">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6.5C11 8.98528 8.98528 11 6.5 11C4.01472 11 2 8.98528 2 6.5C2 4.01472 4.01472 2 6.5 2C8.98528 2 11 4.01472 11 6.5ZM10.3347 11.7489C9.25973 12.5356 7.9341 13 6.5 13C2.91015 13 0 10.0899 0 6.5C0 2.91015 2.91015 0 6.5 0C10.0899 0 13 2.91015 13 6.5C13 7.9341 12.5356 9.25973 11.7489 10.3347L15.7071 14.2929L14.2929 15.7071L10.3347 11.7489Z" fill="#BDBDBD"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link navigation-link-busket" href="#" aria-label="Корзина">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.09068 6L3.5759 0.90519L3.66211 0H4.5714H11.4285H12.3378L12.424 0.905191L12.9093 6H14.5H15.6328L15.4922 7.12403L14.4922 15.124L14.3828 16H13.5H2.49997H1.61719L1.50769 15.124L0.507692 7.12403L0.367188 6H1.49997H3.09068ZM5.09973 6H10.9002L10.5193 2H5.48068L5.09973 6ZM3.38275 14L2.63275 8H13.3672L12.6172 14H3.38275ZM8.49997 9.5V12.5H10.5V9.5H8.49997ZM5.49997 12.5L5.49997 9.5H7.49997L7.49997 12.5H5.49997Z" fill="#BDBDBD"/>
+                  </svg>
+                  <span class="navigation-link-busket-number">26</span>
+                </a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link navigation-link-login" href="login.html">Вход</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -55,10 +70,18 @@
         <section class="services">
           <h2 class="services-title">Популярные услуги</h2>
           <ul class="services-list">
-            <li class="services-item"><span class="services-name">Стрижка машинкой</span><span class="pointing"></span><span class="services-price">800  ₽</span></li>
-            <li class="services-item"><span class="services-name">Стрижка усов</span><span class="pointing"></span><span class="services-price">1200  ₽</span></li>
-            <li class="services-item"><span class="services-name">Груминг</span><span class="pointing"></span><span class="services-price">400  ₽</span></li>
-            <li class="services-item"><span class="services-name">Комплексная стрижка</span><span class="pointing"></span><span class="services-price">2300  ₽</span></li>
+            <li class="services-item">
+              <span class="services-name">Стрижка машинкой</span><span class="services-price">800  ₽</span>
+            </li>
+            <li class="services-item">
+              <span class="services-name">Стрижка усов</span><span class="services-price">1200  ₽</span>
+            </li>
+            <li class="services-item">
+              <span class="services-name">Груминг</span><span class="services-price">400  ₽</span>
+            </li>
+            <li class="services-item">
+              <span class="services-name">Комплексная стрижка</span><span class="services-price">2300  ₽</span>
+            </li>
           </ul>
           <a class="button button-all" href="#">Посмотреть все</a>
         </section>
@@ -176,16 +199,14 @@
         <p class="login-password-info">
           <label class="login-checkbox">
             <input class="visually-hidden" id="login-password-info" type="checkbox" name="remember">
-            <span class="checkbox-indicator"></span>
-            <span class="checkbox-remember">Запомнить меня</span>
+            <span class="checkbox-indicator">Запомнить меня</span>
           </label>
           <a class="restore" href="#">Забыл пароль</a>
         </p>
-        <button class="button" type="submit">войти</button>
+        <button class="login-button button" type="submit">войти</button>
       </form>
       <a class="registration" href="#">Регистрация</a>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
-    
   </body>
 </html>

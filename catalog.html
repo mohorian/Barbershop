@@ -10,33 +10,48 @@
 
   <body class="inner-page">
     <header class="main-header">
-        <nav class="main-navigation">
-          <a class="main-header-logo" href="index.html"><img src="img/logo.svg" width="140" height="18" alt="Логотип"></a>
-          <div class="main-navigation-wrapper">
-            <div class="container">
-              <ul class="navigation-list site-navigation">
-                <li class="navigation-item"><a class="navigation-link" href="about">О нас</a></li>
-                <li class="navigation-item"><a class="navigation-link navigation-link-current" href="catalog.html">Каталог</a></li>
-                <li class="navigation-item"><a class="navigation-link" href="faq.html">Частые вопросы</a></li>
-              </ul>
-              <ul class="navigation-list user-navigation">
-                <li class="navigation-item"><a class="navigation-link"><span class="visually-hidden">Поиск</span></a></li>
-                <li class="navigation-item"><a class="navigation-link"><span class="visually-hidden">Корзина</span></a></li>
-                <li class="navigation-item"><a class="navigation-link login-link" href="login.html">Вход</a></li>
-              </ul>
-            </div>
-          </div>
+        <nav class="main-navigation container">
+          <a class="main-header-logo" href="index.html"><img src="img/logo.svg" width="140" height="18" alt="Логотип барбершопа"></a>
+          <ul class="navigation-list site-navigation">
+            <li class="navigation-item"><a class="navigation-link" href="about">О нас</a></li>
+            <li class="navigation-item"><a class="navigation-link" href="catalog.html">Каталог</a></li>
+            <li class="navigation-item"><a class="navigation-link" href="faq.html">Частые вопросы</a></li>
+          </ul>
+          <ul class="navigation-list user-navigation">
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-search" href="#" aria-label="Поиск">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6.5C11 8.98528 8.98528 11 6.5 11C4.01472 11 2 8.98528 2 6.5C2 4.01472 4.01472 2 6.5 2C8.98528 2 11 4.01472 11 6.5ZM10.3347 11.7489C9.25973 12.5356 7.9341 13 6.5 13C2.91015 13 0 10.0899 0 6.5C0 2.91015 2.91015 0 6.5 0C10.0899 0 13 2.91015 13 6.5C13 7.9341 12.5356 9.25973 11.7489 10.3347L15.7071 14.2929L14.2929 15.7071L10.3347 11.7489Z" fill="#BDBDBD"/>
+                </svg>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-busket" href="#" aria-label="Корзина">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.09068 6L3.5759 0.90519L3.66211 0H4.5714H11.4285H12.3378L12.424 0.905191L12.9093 6H14.5H15.6328L15.4922 7.12403L14.4922 15.124L14.3828 16H13.5H2.49997H1.61719L1.50769 15.124L0.507692 7.12403L0.367188 6H1.49997H3.09068ZM5.09973 6H10.9002L10.5193 2H5.48068L5.09973 6ZM3.38275 14L2.63275 8H13.3672L12.6172 14H3.38275ZM8.49997 9.5V12.5H10.5V9.5H8.49997ZM5.49997 12.5L5.49997 9.5H7.49997L7.49997 12.5H5.49997Z" fill="#BDBDBD"/>
+                </svg>
+                <span class="navigation-link-busket-number">26</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-profile" href="#" aria-label="Профиль">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 8C9.65685 8 11 6.65685 11 5C11 3.34315 9.65685 2 8 2C6.34315 2 5 3.34315 5 5C5 6.65685 6.34315 8 8 8ZM8 10C4.68629 10 2 12.6863 2 16H14C14 12.6863 11.3137 10 8 10Z" fill="#BDBDBD"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </nav>
       </header>
 
-      <main class="container">
+      <main class="page-catalog container">
           <h1 class="page-title">Каталог</h1>
           <ul class="breadcrumbs">
-              <li>
+              <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">Главная</a>
               </li>
-              <li>
-                <a class="breadcrumbs-link breadcrumbs-link-current" href="#">Каталог</a>
+              <li class="breadcrumbs-item breadcrumbs-item-current">
+                Каталог
               </li>
           </ul>
 
@@ -91,7 +106,6 @@
                   </fieldset>
                   <button class="button filter-button" type="submit">Показать</button>
               </form>
-
           </section>
 
           <section class="catalog">
@@ -104,17 +118,25 @@
                 </select>
                 <ul class="catalog-display">
                   <li>
-                    <button class="button"><span class="visually-hidden">Показать список</span></button>
+                    <button class="display-button" aria-label="Показать список">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.895431 0 2C0 3.10457 0.895431 4 2 4C3.10457 4 4 3.10457 4 2C4 0.895431 3.10457 0 2 0ZM2 6C0.895431 6 0 6.89543 0 8C0 9.10457 0.895431 10 2 10C3.10457 10 4 9.10457 4 8C4 6.89543 3.10457 6 2 6ZM0 14C0 12.8954 0.895431 12 2 12C3.10457 12 4 12.8954 4 14C4 15.1046 3.10457 16 2 16C0.895431 16 0 15.1046 0 14ZM7 1C6.44772 1 6 1.44772 6 2C6 2.55228 6.44772 3 7 3H15C15.5523 3 16 2.55228 16 2C16 1.44772 15.5523 1 15 1H7ZM6 8C6 7.44772 6.44772 7 7 7H15C15.5523 7 16 7.44772 16 8C16 8.55228 15.5523 9 15 9H7C6.44772 9 6 8.55228 6 8ZM7 13C6.44772 13 6 13.4477 6 14C6 14.5523 6.44772 15 7 15H15C15.5523 15 16 14.5523 16 14C16 13.4477 15.5523 13 15 13H7Z" fill="#242424"/>
+                      </svg>
+                    </button>
                   </li>
                   <li>
-                    <button class="button"><span class="visually-hidden">Показать карточки</span></button>
+                    <button class="display-button display-button-current" aria-label="Показать карточки">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895431 0.895431 0 2 0C3.10457 0 4 0.895431 4 2C4 3.10457 3.10457 4 2 4C0.895431 4 0 3.10457 0 2ZM6 2C6 0.895431 6.89543 0 8 0C9.10457 0 10 0.895431 10 2C10 3.10457 9.10457 4 8 4C6.89543 4 6 3.10457 6 2ZM16 2C16 0.895431 15.1046 0 14 0C12.8954 0 12 0.895431 12 2C12 3.10457 12.8954 4 14 4C15.1046 4 16 3.10457 16 2ZM0 8C0 6.89543 0.895431 6 2 6C3.10457 6 4 6.89543 4 8C4 9.10457 3.10457 10 2 10C0.895431 10 0 9.10457 0 8ZM10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10C9.10457 10 10 9.10457 10 8ZM12 8C12 6.89543 12.8954 6 14 6C15.1046 6 16 6.89543 16 8C16 9.10457 15.1046 10 14 10C12.8954 10 12 9.10457 12 8ZM4 14C4 12.8954 3.10457 12 2 12C0.895431 12 0 12.8954 0 14C0 15.1046 0.895431 16 2 16C3.10457 16 4 15.1046 4 14ZM6 14C6 12.8954 6.89543 12 8 12C9.10457 12 10 12.8954 10 14C10 15.1046 9.10457 16 8 16C6.89543 16 6 15.1046 6 14ZM16 14C16 12.8954 15.1046 12 14 12C12.8954 12 12 12.8954 12 14C12 15.1046 12.8954 16 14 16C15.1046 16 16 15.1046 16 14Z" fill="white"/>
+                      </svg>
+                    </button>
                   </li>
                 </ul>
               </div>
               <ul class="catalog-list">
                   <li class="catalog-item">
                       <a href="#">
-                          <h3 class="catalog-item-title">Шампунь для мужчин Brews Daily</h3>
+                         <h3 class="catalog-item-title">Шампунь для мужчин Brews Daily</h3>
                           <img src="img/content-1.png" width="220" height="168" alt="Шампунь для мужчин Brews Daily">
                       </a>
                       <b class="catalog-price">744 ₽</b>
@@ -130,7 +152,7 @@
                   </li>
                   <li class="catalog-item">
                         <a href="#">
-                            <h3>Schauma шампунь для мужчин «Сила и объём с хмелем»</h3>
+                            <h3 class="catalog-item-title">Schauma шампунь для мужчин «Сила и объём с хмелем»</h3>
                             <img src="img/content-3.png" width="220" height="168" alt="Шампунь для мужчин Brews Daily">
                         </a>
                         <b class="catalog-price">94 ₽</b>
@@ -138,7 +160,7 @@
                   </li>
                   <li class="catalog-item">
                         <a href="#">
-                            <h3>Nivea Men шампунь-уход  «Экстремальная свежесть с ментолом»</h3>
+                            <h3 class="catalog-item-title">Nivea Men шампунь-уход  «Экстремальная свежесть с ментолом»</h3>
                             <img src="img/content-4.png" width="220" height="168" alt="Шампунь для мужчин Brews Daily">
                         </a>
                         <b class="catalog-price">173 ₽</b>
@@ -146,18 +168,16 @@
                   </li>
                   <li class="catalog-item">
                         <a href="#">
-                            <h3>Шампунь Amplifier Thickening</h3>
+                            <h3 class="catalog-item-title">Шампунь Amplifier Thickening</h3>
                             <img src="img/content-5.png" width="220" height="168" alt="Шампунь для мужчин Brews Daily">
                         </a>
                         <b class="catalog-price">441 ₽</b>
                         <a class="button" href="#">Купить</a>
                   </li>
                   <li class="catalog-item">
-                        <h3>
-                            <a href="#">American Crew шампунь Anti-Dandruff</a>
-                        </h3>
                         <a href="#">
-                            <img src="img/content-6.png" width="220" height="168" alt="Шампунь для мужчин Brews Daily">
+                           <h3 class="catalog-item-title">American Crew шампунь Anti-Dandruff</h3>
+                           <img src="img/content-6.png" width="220" height="168" alt="Шампунь для мужчин Brews Daily">
                         </a>
                         <b class="catalog-price">904 ₽</b>
                         <a class="button" href="#">Купить</a>
@@ -165,12 +185,12 @@
               </ul>
               <ul class="pagination-list">
                   <li class="pagination-item">
-                      <a href="#" class="pagination-link disabled button">
-                          <span class="visually-hidden">Предыдущая страница</span>
+                      <a href="#" class="pagination-link pagination-link-previous disabled button">
+                        <span class="visually-hidden">Предыдущая страница</span>
                       </a>
                   </li>
                   <li class="pagination-item">
-                      <a href="#" class="pagination-link current button">1</a>
+                      <a href="#" class="pagination-link pagination-link-current button">1</a>
                   </li>
                   <li class="pagination-item">
                       <a href="#" class="pagination-link button">2</a>
@@ -185,11 +205,11 @@
                       <a href="#" class="pagination-link button">5</a>
                   </li>
                   <li class="pagination-item">
-                      <a href="#" class="pagination-link button">
-                          <span class="visually-hidden">Следуйщая страница</span>
+                      <a href="#" class="pagination-link pagination-link-next button">
+                        <span class="visually-hidden">Следуйщая страница</span>
                       </a>
                   </li>
-                  <a href="#" class="button">Показать  ещё</a>
+                  <a href="#" class="button pagination-button">Показать  ещё</a>
               </ul>
           </section>
       </main>
@@ -240,14 +260,14 @@
           <p class="login-password-info">
             <label class="login-checkbox">
               <input class="visually-hidden" id="login-password-info" type="checkbox" name="remember">
-              <span class="checkbox-indicator"></span>
-              <span class="checkbox-remember">Запомнить меня</span>
+              <span class="checkbox-indicator">Запомнить меня</span>
             </label>
             <a class="restore" href="#">Забыл пароль</a>
           </p>
-          <button class="button" type="submit">войти</button>
+          <button class="login-button button" type="submit">войти</button>
         </form>
         <a class="registration" href="#">Регистрация</a>
-        <button class="modal-close" type="button">Закрыть</button>
+        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
       </section>
   </body>
+</html>
