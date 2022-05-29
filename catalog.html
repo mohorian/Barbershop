@@ -14,7 +14,7 @@
           <a class="main-header-logo" href="index.html"><img src="img/logo.svg" width="140" height="18" alt="Логотип барбершопа"></a>
           <ul class="navigation-list site-navigation">
             <li class="navigation-item"><a class="navigation-link" href="about">О нас</a></li>
-            <li class="navigation-item"><a class="navigation-link" href="catalog.html">Каталог</a></li>
+            <li class="navigation-item navigation-item-current"><a class="navigation-link" href="catalog.html">Каталог</a></li>
             <li class="navigation-item"><a class="navigation-link" href="faq.html">Частые вопросы</a></li>
           </ul>
           <ul class="navigation-list user-navigation">
@@ -251,11 +251,11 @@
         <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
           <p>
             <label class="visually-hidden" for="user-login" >Логин</label>
-            <input class="login-user" id="user-login" type="text" name="login" placeholder="Логин">
+            <input class="login-user" id="user-login" type="text" name="login" value="" placeholder="Логин">
           </p>
           <p>
             <label class="visually-hidden" for="user-password">Пароль</label>
-            <input class="login-password" id="user-password" type="password" name="password" placeholder="Пароль">
+            <input class="login-password" id="user-password" type="password" name="password" value="" placeholder="Пароль">
           </p>
           <p class="login-password-info">
             <label class="login-checkbox">
@@ -269,5 +269,9 @@
         <a class="registration" href="#">Регистрация</a>
         <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
       </section>
+
+      <div class="modal-overlay"></div>
+
+      <script src="js/modal-login.js"></script>
   </body>
 </html>

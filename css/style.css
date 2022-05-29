@@ -161,6 +161,23 @@ input[type="radio"].visually-hidden {
     width: 440px;
 }
 
+.site-navigation .navigation-item-current {
+    position: relative;
+}
+
+.site-navigation .navigation-item-current::after {
+    content: "";
+
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+
+    height: 4px;
+
+    background-color: #ffffff;
+}
+
 .user-navigation {
     display: flex;
     flex-wrap: wrap;
@@ -1185,6 +1202,9 @@ input[type="radio"].visually-hidden {
     text-decoration: none;
 }
 
+
+/* modal window */
+
 .modal-login {
     display: none;
     position: fixed;
@@ -1199,6 +1219,7 @@ input[type="radio"].visually-hidden {
 
     background-color: #ffffff;
     transform: translate( -50%, -50%);
+    z-index: 2;
 }
 
 .modal-login h2{
@@ -1370,4 +1391,27 @@ input[type="radio"].visually-hidden {
 
 .modal-close::after {
     transform: rotate(-45deg);
+}
+
+
+/*  modal overlay */
+
+.modal-overlay {
+    display: none;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: #242424;
+    opacity: 0.8;
+
+    z-index: 1;
+}
+
+.modal-show {
+    display: block;
 }
